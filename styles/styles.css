@@ -1,22 +1,146 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+:root {
+    --primary-font-color: #3A3A3A;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /*---------------- Uitilites/Common styles -----------------*/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
+.container {
+    /* max-width: 1600px; */
+    margin: 0 auto;
+    overflow: auto;
+    padding: 40px 120px;
+}
 
+.details-primary {
+    padding: 16px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-font-color);
+}
+
+.btn-primary {
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    background: #E02C6D;
+    color: #FFFFFF;
+    border: 0px;
+    border-radius: 41px;
+}
 
 /*-----------------------------------------------------------
                     Header section
 -------------------------------------------------------------*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+}
 
+.navbar h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--primary-font-color);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li {
+    padding: 0 17px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-font-color)
+}
 
 /*-----------------------------------------------------------
                     Main section
 -------------------------------------------------------------*/
+/* Banner Section */
+/* -------------- */
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+/* Banner text */
+.banner-title{
+    padding-top: 145px;
+    padding-right: 133px;
+    padding-bottom: 170px;
+}
+.main-title {
+    font-size: 52px;
+    line-height: 70px;
+    color: var(--primary-font-color);
+}
+/* Banner image */
+.img-background{
+    border: 4px rgba(241, 228, 255, .55) solid;
+    border-radius: 50%;
+    width: 475px;
+    height: 475px;
+    position: relative;
 
+}
+.background{
+    background: rgba(241, 228, 255, .55);
+    width: 75%;
+    height: 75%;
+    border-radius: 100%;
+}
+.banner-img img{
+    position: absolute;
+    top:10px;
+    left: 5px;
+    border-radius: 100%;
+    width: 440px;
+    height: 414px;
+}
 
+/* Partners Section*/
+/* --------------- */
+.companis.flex{
+    justify-content: space-evenly;
+}
 /*-----------------------------------------------------------
                     Footer section
 -------------------------------------------------------------*/
@@ -25,5 +149,3 @@
 /*-----------------------------------------------------------
 -------------------   Midea Quries   ------------------------
 -------------------------------------------------------------*/
-
-
