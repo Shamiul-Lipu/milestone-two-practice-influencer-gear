@@ -37,11 +37,24 @@ a {
     height: 100%;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
 .container {
     /* max-width: 1600px; */
     margin: 0 auto;
     overflow: auto;
     padding: 40px 120px;
+}
+
+.title-primary {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+    color: var(--primary-font-color);
 }
 
 .details-primary {
@@ -62,6 +75,9 @@ a {
     border: 0px;
     border-radius: 41px;
 }
+
+/* Popular Product Section */
+/* ----------------------- */
 
 /*-----------------------------------------------------------
                     Header section
@@ -97,23 +113,26 @@ a {
 -------------------------------------------------------------*/
 /* Banner Section */
 /* -------------- */
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
 }
+
 /* Banner text */
-.banner-title{
+.banner-title {
     padding-top: 145px;
     padding-right: 133px;
     padding-bottom: 170px;
 }
+
 .main-title {
     font-size: 52px;
     line-height: 70px;
     color: var(--primary-font-color);
 }
+
 /* Banner image */
-.img-background{
+.img-background {
     border: 4px rgba(241, 228, 255, .55) solid;
     border-radius: 50%;
     width: 475px;
@@ -121,15 +140,17 @@ a {
     position: relative;
 
 }
-.background{
+
+.background {
     background: rgba(241, 228, 255, .55);
     width: 75%;
     height: 75%;
     border-radius: 100%;
 }
-.banner-img img{
+
+.banner-img img {
     position: absolute;
-    top:10px;
+    top: 10px;
     left: 5px;
     border-radius: 100%;
     width: 440px;
@@ -138,8 +159,58 @@ a {
 
 /* Partners Section*/
 /* --------------- */
-.companis.flex{
+.companis.flex {
     justify-content: space-evenly;
+}
+
+/* Popular products secton */
+/* ----------------------- */
+.popular-products>h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.product {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+}
+
+.product-details>img {
+    width: 100%;
+    height: 100%;
+}
+
+.price {
+    padding-top: 6px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+    color: #FB8200;
+}
+
+.product-details>.pro {
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+}
+
+.see-more {
+    padding: 50px ;
+    color: #E02C6D;
+    display: flex;
+    justify-content: right;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.see-more.fa-arrow-right-long{
+    color: #E02C6D;
 }
 /*-----------------------------------------------------------
                     Footer section
