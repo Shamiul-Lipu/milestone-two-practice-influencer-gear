@@ -3,6 +3,7 @@
 
 :root {
     --primary-font-color: #3A3A3A;
+    --secondery-font-color: whitesmoke;
 }
 
 * {
@@ -201,7 +202,7 @@ a {
 }
 
 .see-more {
-    padding: 50px ;
+    padding: 50px;
     color: #E02C6D;
     display: flex;
     justify-content: right;
@@ -209,13 +210,47 @@ a {
     font-size: 16px;
     line-height: 24px;
 }
-.see-more.fa-arrow-right-long{
+
+.see-more.fa-arrow-right-long {
     color: #E02C6D;
 }
+
+/* Feature Product Section */
+/* ----------------------- */
+.features-title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 60px;
+    color: var(--primary-font-color);
+}
+
+.features-details {
+    padding-left: 96px;
+}
+
+.squar-btn {
+    border-radius: 5px;
+}
+
 /*-----------------------------------------------------------
                     Footer section
 -------------------------------------------------------------*/
-
+.footer{
+    background-color: rgb(0, 0, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.change-color{
+    color: var(--secondery-font-color);
+}
+.social-midea a{
+    color: #FFFFFF;
+    font-size: 25px;
+    padding: 0 15px;
+}
 
 /*-----------------------------------------------------------
 -------------------   Midea Quries   ------------------------
