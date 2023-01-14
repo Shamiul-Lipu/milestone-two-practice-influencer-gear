@@ -77,9 +77,6 @@ a {
     border-radius: 41px;
 }
 
-/* Popular Product Section */
-/* ----------------------- */
-
 /*-----------------------------------------------------------
                     Header section
 -------------------------------------------------------------*/
@@ -235,7 +232,7 @@ a {
 /*-----------------------------------------------------------
                     Footer section
 -------------------------------------------------------------*/
-.footer{
+.footer {
     background-color: rgb(0, 0, 44);
     display: flex;
     flex-direction: column;
@@ -243,15 +240,138 @@ a {
     align-items: center;
     padding: 50px;
 }
-.change-color{
+
+.change-color {
     color: var(--secondery-font-color);
 }
-.social-midea a{
+
+.social-midea a {
     color: #FFFFFF;
     font-size: 25px;
     padding: 0 15px;
 }
 
 /*-----------------------------------------------------------
--------------------   Midea Quries   ------------------------
+-------------------   Media Query   ------------------------
 -------------------------------------------------------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding-top: 0;
+        position: relative;
+        justify-content: flex-end;
+    }
+
+    .fa-cart-shopping {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+    }
+
+    .navbar h2 {
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar li {
+        font-size: 15px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .banner-title {
+        padding: 0;
+    }
+
+    .banner-title,
+    .banner-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .img-background {
+        width: 350px;
+        height: 350px;
+    }
+
+    .background {
+        width: 82%;
+        height: 82%;
+    }
+
+    .banner-img img {
+        width: 340px;
+        height: 314px;
+    }
+
+    .companis {
+        display: flex;
+        gap: 27px;
+        flex-wrap: wrap;
+    }
+
+    .companis>img {
+        width: 65px;
+        height: 35px;
+    }
+
+    .product-showoff {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features {
+        flex-direction: column-reverse;
+    }
+
+    .features-details {
+        text-align: center;
+        padding: 0;
+    }
+
+    .features-img img {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .footer>.title-primary {
+        font-weight: 800;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .details-primary {
+        padding: 5px 0;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+/* Tablate Devices */
